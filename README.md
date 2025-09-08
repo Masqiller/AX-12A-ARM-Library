@@ -12,6 +12,7 @@ The AX-12A is a smart servo motor with built-in control electronics that allows 
 - Torque enable/disable functionality
 - Support for both SoftwareSerial and hardware Serial communication
 - Multiple test examples for different control scenarios
+- (for getting id you will need ttl half duplex combiners and lots of things )
 
 ## Project Structure
 
@@ -156,4 +157,5 @@ For hardware serial support (more reliable at higher baud rates), uncomment:
 ## References
 
 - [Dynamixel Protocol 1.0 Documentation](https://emanual.robotis.com/docs/en/dxl/protocol1/)
+
 - [AX-12A Specifications](https://emanual.robotis.com/docs/en/dxl/ax/ax-12a/)
