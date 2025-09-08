@@ -444,12 +444,15 @@ void loop() {
         
         // Validate speeds
         if (speed1 <= 1023 && speed2 <= 1023) {
-          // Set speed for each servo
+          // Set speed for each servo with a delay between commands
           dxlWriteSpeed(SERVO_ID_1, speed1);
+          delay(5); // Small delay for communication stability
           dxlWriteSpeed(SERVO_ID_8, speed2);
+          delay(5); // Small delay for communication stability
           
-          // Set position for each servo
+          // Set position for each servo with a delay between commands
           dxlWriteGoal(SERVO_ID_1, pos1);
+          delay(5); // Small delay for communication stability
           dxlWriteGoal(SERVO_ID_8, pos2);
           
           Serial.print("Servo 1: Position=");
@@ -501,12 +504,15 @@ void loop() {
         
         // Validate speeds
         if (speed1 <= 1023 && speed2 <= 1023) {
-          // Set speed for each servo
+          // Set speed for each servo with a delay between commands
           dxlWriteSpeed(SERVO_ID_1, speed1);
+          delay(5); // Small delay for communication stability
           dxlWriteSpeed(SERVO_ID_8, speed2);
+          delay(5); // Small delay for communication stability
           
-          // Set position for each servo
+          // Set position for each servo with a delay between commands
           dxlWriteGoal(SERVO_ID_1, pos1);
+          delay(5); // Small delay for communication stability
           dxlWriteGoal(SERVO_ID_8, pos2);
           
           Serial.print("Servo 1: Angle=");
